@@ -3,13 +3,13 @@ import time
 import unittest
 from POMproject.Pages.LoginPage import loginpage
 from POMproject.Pages.Homeepage import HomePage
-import HtmlTestRunner
+#import HtmlTestRunner
 
 class LoginTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome(executable_path=r"/home/carlos/Gaby/chromedriver")
+        cls.driver = webdriver.Chrome(executable_path=r"C:\DriverChrome\chromedriver")
         cls.driver .implicitly_wait(10)
         cls.driver .maximize_window()
 
@@ -34,8 +34,8 @@ class LoginTest(unittest.TestCase):
         print("Test Completed")
 
 if __name__ == "__main__":
-    unittest.main(testRunner= HtmlTestRunner.HTMLTestRunner(output = '/home/carlos/PycharmProjects/SeleniumProject/POMproject/Reports'))
-
+   # unittest.main(testRunner= HtmlTestRunner.HTMLTestRunner(output = '/home/carlos/PycharmProjects/SeleniumProject/POMproject/Reports'))
+   unittest.main()
 
 
 
